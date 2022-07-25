@@ -28,7 +28,6 @@ value | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11
 
 The basic space is a two-dimensional space with the pc and the influence as four levels and indicates how influential a note is in a chord. <a href="#bs_desc">Tab. 2</a> shows the meaning of influence levels and <a href="#bs_c">Fig. 1</a> shows the basic space of $\rm{I}/\mathbf{C}$. The closer a note is to Level a, the more influential it is in the chord (e.g., $\rm{}C(0)$ is the most influential note in $\rm{I}/\mathbf{C}$).
 
-
 <center>
 Table. 2
 Level and its description in the basic space.
@@ -159,7 +158,8 @@ where $c_1$ is the intermediate chord proximity from the starting region to the 
 <img src="images/pivoting.png" width="500">
 <figcaption>Figure. 10 An example of routing F→b. 
 
-[^pivoting]
+Blue rectangles: pivot regions, red circles: the starting point or
+pivots. 
 </figcaption>
 </div>
 </figure>
@@ -184,6 +184,3 @@ where $\rm{D_{\mathit{i}}}/\mathbf{R_{\mathit{i}}}$ is the chord of the degree $
 Cambridge, Mass: MIT Press, 1983.
 
 [^3]: S. Sakamoto and S. Tojo. Harmony Analysis of Music in Tonal Pitch Space, in IPSJ SIG Technical Report, Vol.2009-MUS-80, No.9, pp.1-6, 2009, (in Japanese).
-
-[^pivoting]: Blue rectangles: pivot regions, red circles: the starting point or
-pivots. 
