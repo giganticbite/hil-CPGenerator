@@ -1,3 +1,5 @@
+<script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax:{inlineMath:[['\$','\$'],['\\(','\\)']],processEscapes:true},CommonHTML: {matchFontHeight:false}});</script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
 # Tonal Pitch Spaces
 We introduce chord proximity, regional proximity, and chord/regional proximity based on the Tonal Pitch Space (TPS)[^1]. TPS is a complementary theory to A Generative Theory of Tonal Music (GTTM)[^2], which is a cognitive tonal music theory that focuses on structure. TPS considers the mathematical structure of music, such as the circle of fifths and chord compositions.
