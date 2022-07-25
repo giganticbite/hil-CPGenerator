@@ -1,1 +1,1 @@
-Hello.
+This is the supplimentary page for "Human-in-the-loop Chord Progression Generator with Generative Adversarial Network."
