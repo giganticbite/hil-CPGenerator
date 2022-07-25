@@ -32,6 +32,9 @@ The basic space is a two-dimensional space with the pc and the influence as four
 <center>
 Table. 2
 Level and its description in the basic space.
+</center>
+<table id="bs_desc">
+</table>
 
 Level|Description
 :---: | :---:
@@ -41,9 +44,6 @@ Level c | The components of a chord.
 Level d | The diatonic scale of chord's key.
 Level e | All pitch classes.
 
-</center>
-<table id="bs_desc">
-</table>
 
 <figure id="bs_c">
 <div align="center">
