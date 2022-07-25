@@ -180,7 +180,6 @@ where $\rm{D_{\mathit{i}}}/\mathbf{R_{\mathit{i}}}$ is the chord of the degree $
 
 [^1]: F. Lerdahl, *Tonal Pitch Space*. Oxford University Press, 2001.
 
-[^2]: F. Lerdahl, R. Jackendoff. A Generative Theory of Tonal Music,
-Cambridge, Mass: MIT Press, 1983.
+[^2]: F. Lerdahl, R. Jackendoff. *A Generative Theory of Tonal Music*, Cambridge, Mass: MIT Press, 1983.
 
-[^3]: S. Sakamoto and S. Tojo. Harmony Analysis of Music in Tonal Pitch Space, in IPSJ SIG Technical Report, Vol.2009-MUS-80, No.9, pp.1-6, 2009, (in Japanese).
+[^3]: S. Sakamoto and S. Tojo. *Harmony Analysis of Music in Tonal Pitch Space*, in IPSJ SIG Technical Report, Vol.2009-MUS-80, No.9, pp.1-6, 2009, (in Japanese).
