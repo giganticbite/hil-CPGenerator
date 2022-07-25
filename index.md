@@ -32,9 +32,6 @@ The basic space is a two-dimensional space with the pc and the influence as four
 <center>
 Table. 2
 Level and its description in the basic space.
-</center>
-<table id="bs_desc">
-</table>
 
 Level|Description
 :---: | :---:
@@ -43,6 +40,10 @@ Level b | The root of fifth of a chord.
 Level c | The components of a chord.
 Level d | The diatonic scale of chord's key.
 Level e | All pitch classes.
+
+</center>
+<table id="bs_desc">
+</table>
 
 <figure id="bs_c">
 <div align="center">
@@ -105,7 +106,7 @@ where $i$ is the steps on the region circle, $j$ and $k$ are the same as before.
 <figure id="chromatic_cof">
 <div align="center">
 <img src="images/chromatic_circle_of_fifth.png" width="250">
-<figcaption>Figure. 5 Derivation of chord proximity I/C → V/C.</figcaption>
+<figcaption>Figure. 5 The chromatic circle of fifths.</figcaption>
 </div>
 </figure>
 
