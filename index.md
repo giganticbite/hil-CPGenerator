@@ -17,11 +17,12 @@ Table. 1
 A pitch class.
 </center>
 <table id="pc">
+</table>
 
 pc | $\rm{C}$ | $\rm{}C\sharp/D\flat$ | $\rm{}D$ | $\rm{}D\sharp/E\flat$ | $\rm{}E$ | $\rm{}F$ | $\rm{}F\sharp/G\flat$ | $\rm{}G$ | $\rm{}G\sharp/A\flat$ | $\rm{}A$ | $\rm{}A\sharp/B\flat$ | $\rm{}B$
 :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---:
 value | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11
-</table>
+
 
 ### Basic Space
 
@@ -33,6 +34,7 @@ Table. 2
 Level and its description in the basic space.
 </center>
 <table id="bs_desc">
+</table>
 
 Level|Description
 :---: | :---:
@@ -41,7 +43,6 @@ Level b | The root of fifth of a chord.
 Level c | The components of a chord.
 Level d | The diatonic scale of chord's key.
 Level e | All pitch classes.
-</table>
 
 <figure id="bs_c">
 <div align="center">
@@ -140,7 +141,7 @@ Regional proximity is the proximity of a region in terms of the *distance of its
 
 The regional space suggests a further reason why the above formula for $c$ works for nearby but not distant regions. Nearby regions share chords that can function as *pivot chords* from one region to another. But as chromatic changes infiltrate more distant regions, direct pivot chords disappear, requiring intermediate pivots that have not yet been taken into account [^1]. From these point of view, the regional proximity from the starting region $\mathbf{S}$ to the destination region $\mathbf{D}$, $\delta\left(\mathbf{S}\rightarrow \mathbf{D}\right)$ can be stated as
 
-$$\delta\left(\mathbf{S}\rightarrow \mathbf{D}\right)\vcentcolon= c_1+c_2+\ldots+c_n$$ 
+$$\delta\left(\mathbf{S}\rightarrow \mathbf{D}\right):= c_1+c_2+\ldots+c_n$$ 
     
 where $c_1$ is the intermediate chord proximity from the starting region to the tonic of the first pivot region (the first tonic pivots), $c_2$ is the intermediate chord proximity from the tonic of the first pivot region to the second one, and so on. In this calculation, the regional proximity needs the six-regional units called *pivot regions* (<a href="#pivot">Fig. 9</a>) and tonic of pivot regions called *tonic pivots*. For example, $\delta\left(\mathbf{F}\rightarrow \mathbf{b}\right)$ can be calculated with pivots $\mathbf{F}\rightarrow \mathbf{C}\rightarrow \mathbf{e}\rightarrow \mathbf{b}$ as in <a href="#pivoting">Fig. 10</a>. And as you can see in this example, there are multiple routing for $\mathbf{S}\rightarrow \mathbf{D}$ since pivot regions have at least five candidates (e.g., a routing for $\mathbf{F}\rightarrow \mathbf{b}$ can be interpreted as $\mathbf{F}\rightarrow \mathbf{C}\rightarrow \mathbf{e}\rightarrow \mathbf{b}$, $\mathbf{F}\rightarrow \mathbf{C}\rightarrow \mathbf{G}\rightarrow \mathbf{b}$, etc.). So we'll use the minimum regional proximity of all regions in this paper. These values can be computed with some algorithms such as Dijkstra's algorithm and Bellman-Ford algorithm since this routing can be taken as the shortest path from a single source vertex to all of the other vertices in a weighted graph.
 
@@ -167,7 +168,7 @@ where $c_1$ is the intermediate chord proximity from the starting region to the 
 
 From these definitions, the chord/regional proximity, the chord proximity enlarged with the regional proximity, $\delta$ can be determined as:
 
-$$\delta\left(\rm{D_1}/\mathbf{R_1}\rightarrow \rm{D_2}/\mathbf{R_2}\right) \vcentcolon=
+$$\delta\left(\rm{D_1}/\mathbf{R_1}\rightarrow \rm{D_2}/\mathbf{R_2}\right) :=
     d\left(\rm{D_1}/\mathbf{R_1}\rightarrow \mathbf{P_1}\right)
     +\delta\left(\mathbf{P_1}\rightarrow \mathbf{P_n}\right)
     +d\left(\mathbf{P_n}\rightarrow \rm{D_2}/\mathbf{R_2}\right)
