@@ -25,7 +25,7 @@ Fujii et al.[^1] doesn’t distinguish between these two types of evaluations. T
 
 
 # Generated chord progressions
-These are the most natural chord progressions generated from 15 and 15 + feedback rated from the subjects.
+These are the most natural chord progressions generated from 15 and 15 + feedback.
 <center>
 <figure id="e15">
 <img src="images/e15.jpg" width="450">
@@ -45,10 +45,10 @@ These are the most natural chord progressions generated from 15 and 15 + feedbac
 </audio>
 </center>
 
-# Tonal Pitch Spaces
+# Appendix: Tonal Pitch Spaces
 We introduce chord proximity, regional proximity, and chord/regional proximity based on the Tonal Pitch Space (TPS)[^2]. TPS is a complementary theory to A Generative Theory of Tonal Music (GTTM)[^3], which is a cognitive tonal music theory that focuses on structure. TPS considers the mathematical structure of music, such as the circle of fifths and chord compositions.
 
-> Note: To avoid duplicating mathematical notations and symbols in our paper, some notations in this page might be defferent from the original TPS. 
+> Note: To avoid duplicating mathematical notations and symbols in our paper, some notations on this page might be different from the original TPS. 
 
 ## Chord Proximity
 
@@ -221,7 +221,7 @@ $$
     
 where $\rm{D_{\mathit{i}}}/\mathbf{R_{\mathit{i}}}$ is the chord of the degree $\rm{D_{\mathit{i}}}$ on region $\rm{\mathbf{R_{\mathit{i}}}}$ and $\mathbf{P_{\mathit{k}}}$ is a tonic pivot.
 
-[^1]: K. Fujii, Y. Saito, S. Takamichi, Y. Baba, and H. Saruwatari, *HumanGAN: generative adversarial network with hu-manbased discriminator and its evaluation in speech perception modeling*, in Proc. ICASSP, pp. 6239-6243, 2020.
+[^1]: K. Fujii, Y. Saito, S. Takamichi, Y. Baba, and H. Saruwatari, *HumanGAN: generative adversarial network with human-based discriminator and its evaluation in speech perception modeling*, in Proc. ICASSP, pp. 6239-6243, 2020.
 
 [^2]: F. Lerdahl, *Tonal Pitch Space*. Oxford University Press, 2001.
 
