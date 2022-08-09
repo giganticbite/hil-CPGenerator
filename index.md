@@ -1,8 +1,31 @@
 <script type="text/x-mathjax-config">MathJax.Hub.Config({tex2jax:{inlineMath:[['\$','\$'],['\\(','\\)']],processEscapes:true},CommonHTML: {matchFontHeight:false}});</script>
 <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
-# Generated chord progressions
+# The interface for collecting human feedback
+The subjective feedback scales have 6-point for evaluating the naturalness of a pair of chord progressions, A and B: 
+- *A is much more natural*
+- *A is a little more natural*
+- *Both are natural*
+- *Both are unnatural*
+- *B is a little more natural*
+- *B is much more natural*
 
+<figure id="interface">
+<div align="center">
+<img src="images/interface.png " width="500">
+<figcaption>Figure. A The interface for collecting human feedback.</figcaption>
+</div>
+</figure>
+
+In this feedback, the listener answers more left button if the data on the left $\hat{x}_n+\Delta x_n^{(r)}$ (chord progression A.) is natural and vice versa. In particular, the middle evaluation $\Delta D\left(x_n^{(r)}\right)=0$ can be taken as "I. Both are natural" and "II. Both are unnatural" as below:
+1. $\Delta D\left(\hat{x}_n+\Delta x_n^{(r)}\right)=\Delta D\left(\hat{x}_n-\Delta x_n^{(r)}\right)=1$
+2. $\Delta D\left(\hat{x}_n+\Delta x_n^{(r)}\right)=\Delta D\left(\hat{x}_n-\Delta x_n^{(r)}\right)=0$
+
+Fujii et al.[^1] doesn’t distinguish between these two types of evaluations. Thus we distinguish between these two types of evaluations in this study.
+
+
+# Generated chord progressions
+These are the most natural chord progressions generated from 15 and 15 + feedback rated from the subjects.
 <center>
 <figure id="e15">
 <img src="images/e15.jpg" width="450">
@@ -23,7 +46,7 @@
 </center>
 
 # Tonal Pitch Spaces
-We introduce chord proximity, regional proximity, and chord/regional proximity based on the Tonal Pitch Space (TPS)[^1]. TPS is a complementary theory to A Generative Theory of Tonal Music (GTTM)[^2], which is a cognitive tonal music theory that focuses on structure. TPS considers the mathematical structure of music, such as the circle of fifths and chord compositions.
+We introduce chord proximity, regional proximity, and chord/regional proximity based on the Tonal Pitch Space (TPS)[^2]. TPS is a complementary theory to A Generative Theory of Tonal Music (GTTM)[^3], which is a cognitive tonal music theory that focuses on structure. TPS considers the mathematical structure of music, such as the circle of fifths and chord compositions.
 
 > Note: To avoid duplicating mathematical notations and symbols in our paper, some notations in this page might be defferent from the original TPS. 
 
@@ -120,7 +143,7 @@ A chromatic step means the movement of a pc on level e. And of course, a regiona
 
 $$c(x\rightarrow y) = i+j+k$$ 
 
-where $i$ is the steps on the region circle, $j$ and $k$ are the same as before. <a href="#bs_comparison_diff">Fig. 6</a> shows the derivation of chord proximity across regions, $\mathbf{C}$ to $\mathbf{G}$. Here, although $\rm{V}/\mathbf{C}$ and $\rm{I}/\mathbf{G}$ both refer to G-major, $c(\rm{I}/\mathbf{C}\rightarrow\rm{V}/\mathbf{C})=5$ and $c(\rm{I}/\mathbf{C}\rightarrow\rm{I}/\mathbf{G})=7$ mean that the chord proximity will be different depending on their regions. In general, the chord proximity is smaller when interpreted without musical modulation [^3].
+where $i$ is the steps on the region circle, $j$ and $k$ are the same as before. <a href="#bs_comparison_diff">Fig. 6</a> shows the derivation of chord proximity across regions, $\mathbf{C}$ to $\mathbf{G}$. Here, although $\rm{V}/\mathbf{C}$ and $\rm{I}/\mathbf{G}$ both refer to G-major, $c(\rm{I}/\mathbf{C}\rightarrow\rm{V}/\mathbf{C})=5$ and $c(\rm{I}/\mathbf{C}\rightarrow\rm{I}/\mathbf{G})=7$ mean that the chord proximity will be different depending on their regions. In general, the chord proximity is smaller when interpreted without musical modulation [^4].
 
 
 <figure id="chromatic_cof">
@@ -141,7 +164,7 @@ $$c(\rm{I}/\mathbf{C}\rightarrow\rm{I}/\mathbf{G})=1+1+5=7$$
 
 ### Regional Space
 
-Regional proximity is the proximity of a region in terms of the *distance of its local tonic*. This step is justified because one strongly hears chords in relation to their local tonic as well as to one overall governing tonic [^1]. In the calculation of regional proximity, we use the regional space, a torus of regions. First we place the tonic $\rm{I}/\mathbf{I}$ and the local tonics $\rm{I}/\mathbf{V}, \rm{I}/\mathbf{IV}, \rm{i}/\mathbf{vi}, \rm{i}/\mathbf{i}$ that have the smallest chord proximity $c=7$ from the tonic on a torus. The region in the circle of fifths ($\rm{I}/\mathbf{V}, \rm{I}/\mathbf{IV}$) placed on the vertical axis, and relative and parallel minor ($\rm{i}/\mathbf{vi}, \rm{i}/\mathbf{i}$) placed on the horizontal axis. Then do this procedure recursively to form a torus, showed in <a href="#regional_space">Fig. 7</a> and <a href="#regional_space_rel">Fig. 8</a>.
+Regional proximity is the proximity of a region in terms of the *distance of its local tonic*. This step is justified because one strongly hears chords in relation to their local tonic as well as to one overall governing tonic [^2]. In the calculation of regional proximity, we use the regional space, a torus of regions. First we place the tonic $\rm{I}/\mathbf{I}$ and the local tonics $\rm{I}/\mathbf{V}, \rm{I}/\mathbf{IV}, \rm{i}/\mathbf{vi}, \rm{i}/\mathbf{i}$ that have the smallest chord proximity $c=7$ from the tonic on a torus. The region in the circle of fifths ($\rm{I}/\mathbf{V}, \rm{I}/\mathbf{IV}$) placed on the vertical axis, and relative and parallel minor ($\rm{i}/\mathbf{vi}, \rm{i}/\mathbf{i}$) placed on the horizontal axis. Then do this procedure recursively to form a torus, showed in <a href="#regional_space">Fig. 7</a> and <a href="#regional_space_rel">Fig. 8</a>.
 
 <figure id="regional_space">
 <div align="center">
@@ -160,7 +183,7 @@ Regional proximity is the proximity of a region in terms of the *distance of its
 
 ### Pivots and Regional Proximity
 
-The regional space suggests a further reason why the above formula for $c$ works for nearby but not distant regions. Nearby regions share chords that can function as *pivot chords* from one region to another. But as chromatic changes infiltrate more distant regions, direct pivot chords disappear, requiring intermediate pivots that have not yet been taken into account [^1]. From these point of view, the regional proximity from the starting region $\mathbf{S}$ to the destination region $\mathbf{D}$, $\delta\left(\mathbf{S}\rightarrow \mathbf{D}\right)$ can be stated as
+The regional space suggests a further reason why the above formula for $c$ works for nearby but not distant regions. Nearby regions share chords that can function as *pivot chords* from one region to another. But as chromatic changes infiltrate more distant regions, direct pivot chords disappear, requiring intermediate pivots that have not yet been taken into account [^2]. From these point of view, the regional proximity from the starting region $\mathbf{S}$ to the destination region $\mathbf{D}$, $\delta\left(\mathbf{S}\rightarrow \mathbf{D}\right)$ can be stated as
 
 $$\delta\left(\mathbf{S}\rightarrow \mathbf{D}\right):= c_1+c_2+\ldots+c_n$$ 
     
@@ -198,9 +221,10 @@ $$
     
 where $\rm{D_{\mathit{i}}}/\mathbf{R_{\mathit{i}}}$ is the chord of the degree $\rm{D_{\mathit{i}}}$ on region $\rm{\mathbf{R_{\mathit{i}}}}$ and $\mathbf{P_{\mathit{k}}}$ is a tonic pivot.
 
+[^1]: K. Fujii, Y. Saito, S. Takamichi, Y. Baba, and H. Saruwatari, *HumanGAN: generative adversarial network with hu-manbased discriminator and its evaluation in speech perception modeling*, in Proc. ICASSP, pp. 6239-6243, 2020.
 
-[^1]: F. Lerdahl, *Tonal Pitch Space*. Oxford University Press, 2001.
+[^2]: F. Lerdahl, *Tonal Pitch Space*. Oxford University Press, 2001.
 
-[^2]: F. Lerdahl, R. Jackendoff. *A Generative Theory of Tonal Music*, Cambridge, Mass: MIT Press, 1983.
+[^3]: F. Lerdahl, R. Jackendoff. *A Generative Theory of Tonal Music*, Cambridge, Mass: MIT Press, 1983.
 
-[^3]: S. Sakamoto and S. Tojo. *Harmony Analysis of Music in Tonal Pitch Space*, in IPSJ SIG Technical Report, Vol.2009-MUS-80, No.9, pp.1-6, 2009, (in Japanese).
+[^4]: S. Sakamoto and S. Tojo. *Harmony Analysis of Music in Tonal Pitch Space*, in IPSJ SIG Technical Report, Vol.2009-MUS-80, No.9, pp.1-6, 2009, (in Japanese).
