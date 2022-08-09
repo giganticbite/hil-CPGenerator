@@ -3,11 +3,24 @@
 
 # Generated chord progressions
 
-![](images/e15.jpg)
-![](images/e15fb.jpg)
+<center>
+<figure id="e15">
+<img src="images/e15.jpg" width="450">
+</figure>
+<audio controls="controls">
+  <source type="audio/mp3" src="audios/aud19.mp3"></source>
+</audio>
+</center>
+<br>
 
-![](audios/aud19.mp3)
-![](audios/aud23.mp3)
+<center>
+<figure id="e15fb">
+<img src="images/e15fb.jpg" width="450">
+</figure>
+<audio controls="controls">
+  <source type="audio/mp3" src="audios/aud23.mp3"></source>
+</audio>
+</center>
 
 # Tonal Pitch Spaces
 We introduce chord proximity, regional proximity, and chord/regional proximity based on the Tonal Pitch Space (TPS)[^1]. TPS is a complementary theory to A Generative Theory of Tonal Music (GTTM)[^2], which is a cognitive tonal music theory that focuses on structure. TPS considers the mathematical structure of music, such as the circle of fifths and chord compositions.
