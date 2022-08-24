@@ -214,9 +214,9 @@ pivots.
 From these definitions, the chord/regional proximity, the chord proximity enlarged with the regional proximity, $\delta$ can be determined as:
 
 $$\delta\left(\rm{D_1}/\mathbf{R_1}\rightarrow \rm{D_2}/\mathbf{R_2}\right) :=
-    d\left(\rm{D_1}/\mathbf{R_1}\rightarrow \mathbf{P_1}\right)
+    c\left(\rm{D_1}/\mathbf{R_1}\rightarrow \mathbf{P_1}\right)
     +\delta\left(\mathbf{P_1}\rightarrow \mathbf{P_n}\right)
-    +d\left(\mathbf{P_n}\rightarrow \rm{D_2}/\mathbf{R_2}\right)
+    +c\left(\mathbf{P_n}\rightarrow \rm{D_2}/\mathbf{R_2}\right)
 $$ 
     
 where $\rm{D_{\mathit{i}}}/\mathbf{R_{\mathit{i}}}$ is the chord of the degree $\rm{D_{\mathit{i}}}$ on region $\rm{\mathbf{R_{\mathit{i}}}}$ and $\mathbf{P_{\mathit{k}}}$ is a tonic pivot.
